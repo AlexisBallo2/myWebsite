@@ -11,6 +11,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
+import { Anchor } from "antd";
 
 function HomePage() {
   return (
@@ -42,20 +43,20 @@ function HomePage() {
             Hide navigation
           </a>
           <ul id="nav" className="nav">
-            <li className="current">
+            <li className="navoptions">
               <AnchorLink href="#home">Home</AnchorLink>
             </li>
-            <li className="current">
+            <li className="navoptions">
               <AnchorLink href="#resume">Resume</AnchorLink>
             </li>
-            <li className="current">
+            <li className="navoptions">
               <AnchorLink href="#testimonials">testimonials</AnchorLink>
             </li>
-            <li className="current">
+            <li className="navoptions">
               <AnchorLink href="#contact">contact</AnchorLink>
             </li>
-            <li className="current">
-              <AnchorLink href="#portfolioo">portfolio</AnchorLink>
+            <li className="navoptions">
+              <AnchorLink href="#portfolio">portfolio</AnchorLink>
             </li>
           </ul>
         </nav>
@@ -333,9 +334,9 @@ function HomePage() {
           </div>
 
           <div id="go-top">
-            <a className="smoothscroll" title="Back to Top" href="#home">
+            <AnchorLink className="" title="Back to Top" href="#home">
               <i className="icon-up-open"></i>
-            </a>
+            </AnchorLink>
           </div>
         </div>
       </footer>

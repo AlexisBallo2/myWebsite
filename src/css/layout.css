@@ -216,6 +216,10 @@ ul#nav li.current a {
   color: #f06000;
 }
 
+ul#nav li.navoptions a:hover {
+  background-color: darkgray;
+}
+
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
