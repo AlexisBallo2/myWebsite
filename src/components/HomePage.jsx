@@ -1,4 +1,3 @@
-import "./homepage.css";
 import "../../src/css/default.css";
 import "../../src/css/fonts.css";
 import "../../src/css/layout.css";
@@ -6,16 +5,18 @@ import "../../src/css/magnific-popup.css";
 import "../../src/css/media-queries.css";
 
 import useOnScreen from "../hooks/useOnScreen";
-
+import Nav from "../Nav";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Anchor } from "antd";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
     <div>
+      <Nav />
       <Helmet>
         <script
           async
@@ -35,7 +36,7 @@ function HomePage() {
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
       </Helmet>
       <header id="home">
-        <nav id="nav-wrap">
+        {/* <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
           </a>
@@ -56,10 +57,10 @@ function HomePage() {
               <AnchorLink href="#contact">contact</AnchorLink>
             </li>
             <li className="navoptions">
-              <AnchorLink href="#portfolio">portfolio</AnchorLink>
+              <Link to="/portfolio">portfolio</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">Alexis Ballo</h1>
@@ -96,7 +97,7 @@ function HomePage() {
                 </a>
               </li>
               <li>
-                <a href="mailto:alexispballo@gmail.com" target="_blank">
+                <a href="mailto:aballo@middlebury.edu" target="_blank">
                   <i className="fa fa-envelope"></i>
                 </a>
               </li>
@@ -322,7 +323,7 @@ function HomePage() {
                 </a>
               </li>
               <li>
-                <a href="mailto:alexispballo@gmail.com" target="_blank">
+                <a href="mailto:aballo@middlebury.edu" target="_blank">
                   <i className="fa fa-envelope"></i>
                 </a>
               </li>
